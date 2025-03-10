@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # npf_urban
 =======
-# NPF Project Arctic
+# NPF Project
 
 This repository contains the folder `NPF_project_urban`, which focuses on analyzing new particle formation (NPF) using machine learning algorithms, data preprocessing, and visualization techniques. This document outlines the folder structure, coding practices, and guidelines for maintaining the project.
 
@@ -39,12 +38,6 @@ All results are stored locally within the respective ML algorithm folder.
 #### Data Preprocessing
 - Located in the `misc` folder.
   - **Raw input data**: Located in `ATML_NAS/students/Aslan`.
-
-#### Table and Figure Generation
-- Scripts are located in the `misc` and `tables` folders.
-  - Files in `misc` require accurate file paths for input data. Verify paths before execution.
-  - Scripts in `tables` are self-contained `.ipynb` files and do not depend on other folders.  
-  **Note**: Results must be manually input.
 
 ---
 

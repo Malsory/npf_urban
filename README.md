@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # npf_urban
 =======
-# NPF Project Arctic
+# NPF Project
 
 This repository contains the folder `NPF_project_urban`, which focuses on analyzing new particle formation (NPF) using machine learning algorithms, data preprocessing, and visualization techniques. This document outlines the folder structure, coding practices, and guidelines for maintaining the project.
 

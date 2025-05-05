@@ -1,24 +1,20 @@
-<<<<<<< HEAD
-FROM python:3.10.13
+# Use a specific image by SHA256 digest (good for reproducibility)
+FROM python:3.11-slim
 
-COPY . /app
-
-
+# Set working directory
 WORKDIR /app
-# ADD hello_world.py .
-COPY requirements.txt /app/
+
+# Copy requirements first (this helps with caching)
+COPY requirements.txt .
+
+# Install Python packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-=======
-FROM python:3.10.13
+# Now copy the rest of your code
+COPY . .
 
-COPY . /app
+# Set default command (customize this based on your app)
+# For example, to run a script:
+# CMD ["python", "main.py"]
 
-
-WORKDIR /app
-# ADD hello_world.py .
-COPY requirements.txt /app/
-RUN pip install --no-cache-dir -r requirements.txt
-
->>>>>>> e4640d4 (Mar 10 2025 11:58)
-CMD ["python", "hello_world.py"]
+# docker run -it --rm -p 8888:8888 -v "$(Get-Location):/home/jovyan/work" jupyter/base-notebook
